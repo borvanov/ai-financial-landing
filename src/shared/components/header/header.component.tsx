@@ -1,12 +1,17 @@
-import { Poppins } from "@next/font/google";
 import styles from "@/styles/header.module.css";
-
-const poppinsBold = Poppins({ weight: "900", subsets: ["latin"] });
 
 export const Header: React.FC = () => (
   <header className={styles.container}>
-    <h1 className={poppinsBold.className}>
-      F<span className={styles.logoSelection}>AI</span>NANCIAL
-    </h1>
+    <h1>AI Financial.</h1>
+
+    <menu className={styles.menu}>
+      <li>Home</li>
+      <li>Why us</li>
+      <li>Features</li>
+      <li>Blog</li>
+      <li>Support</li>
+    </menu>
+
+    <button className="primary">Join our waiting list</button>
   </header>
 );

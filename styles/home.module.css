@@ -1,0 +1,65 @@
+.container {
+  padding: 80px 20px 0 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  line-height: 80px;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.header span {
+  color: var(--secondary-color);
+}
+
+.description {
+  font-size: 14px;
+  margin: 40px 0;
+  opacity: 0.7;
+}
+
+.advantages {
+  width: 100%;
+  margin-top: 80px;
+  box-sizing: border-box;
+  padding: 40px 20px;
+
+  background: linear-gradient(-0.15turn, #1f1f1f, #282828);
+  border-radius: 20px;
+
+  text-align: center;
+  color: white;
+}
+
+.dividerLine {
+  height: 1px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 30px auto;
+  opacity: 0.8;
+}
+
+.advantages h2 {
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.advantages h2 span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.advantagesBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.advantagesBlock span {
+  font-weight: 300;
+  font-size: 14px;
+  flex: 1;
+  padding: 0 20px;
+}

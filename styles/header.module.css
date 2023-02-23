@@ -1,17 +1,30 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-}
-
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding: 10px 20px;
 }
 
-.logoSelection {
-  opacity: 0.4;
+.menu {
+  flex: 1;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 14px;
+
+  list-style: none;
+}
+
+.menu li {
+  cursor: pointer;
+  transition: 0.2s;
+  color: var(--third-color);
+}
+
+.menu li:hover {
+  color: var(--secondary-color);
 }
