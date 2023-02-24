@@ -43,7 +43,11 @@ export default function Home() {
           <div className={styles.dividerLine} />
 
           <div className={styles.advantagesBlock}>
-            <span>100% data security</span>
+            <span>
+              100% data security.
+              <br />
+              Nothing could be steeled
+            </span>
             <span>Native communication with a chat-bot</span>
             <span>
               The most relevant
@@ -55,8 +59,33 @@ export default function Home() {
               <br />
               and utilities
             </span>
-            <span>We care about your time</span>
+            <span>
+              Quick and effective support.
+              <br />
+              We are online 24/7
+            </span>
           </div>
+        </section>
+
+        <section className={styles.contentBlock}>
+          <div>
+            <h2>
+              Let the AI summarize all your expenses.
+              <br />
+              Simply provide it with the information.
+              <br />
+              And this is it.
+            </h2>
+            <p>
+              Work together with the Neural Network to achieve the best result
+              <br />
+              in getting all your expenses properly organized.
+            </p>
+          </div>
+        </section>
+
+        <section className={styles.contentBlock}>
+          <h2>It is easy. Too easy.</h2>
         </section>
       </main>
     </>
