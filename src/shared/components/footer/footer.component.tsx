@@ -1,8 +1,8 @@
-import styles from "@/styles/footer.module.css";
+import styles from "./footer.module.css";
 
 export const Footer: React.FC = () => (
   <footer className={styles.container}>
-    <section className={styles.contentContainer}>
+    <section className={`${styles.contentContainer} content`}>
       <div className={styles.mainInfo}>
         <h1>AI Financial</h1>
 
@@ -16,12 +16,12 @@ export const Footer: React.FC = () => (
 
       <div className={styles.columns}>
         <div className={styles.column}>
-          <h3>Support</h3>
+          <h3>Project</h3>
 
           <ul>
-            <li>Telegram</li>
-            <li>E-mail</li>
-            <li>Instagram</li>
+            <li>Features</li>
+            <li>Our goal</li>
+            <li>Waiting list</li>
           </ul>
         </div>
 
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => (
 
           <ul>
             <li>FAQ</li>
-            <li>Terms & Conditions</li>
+            <li>Terms of use</li>
             <li>Blog</li>
           </ul>
         </div>
