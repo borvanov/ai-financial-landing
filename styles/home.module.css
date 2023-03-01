@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.container > * {
+  flex: 1;
+}
+
 .container h2 {
   font-weight: 500;
   font-size: 32px;
@@ -12,27 +16,76 @@
 .header {
   line-height: 80px;
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .header span {
+  display: flex;
+  align-items: center;
+}
+
+.headerIcon {
+  font-size: 16px;
+  max-height: 90px;
+  margin: 0 20px;
   color: var(--secondary-color);
+}
+
+.header b {
+  font-size: 80px;
+}
+
+.welcomeBlock {
+  padding-bottom: 0;
+  height: 800px;
+  padding-top: 100px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .description {
   margin: 40px 0;
-  opacity: 0.7;
+  /* opacity: 0.7; */
+}
+
+.descriptionBlock {
+  flex: 1;
+}
+
+.descriptionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.descriptionContent button {
+  margin-bottom: 80px;
+}
+
+.imagesPreviewContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagesOverlay {
+  height: 100%;
+  overflow: hidden;
 }
 
 .advantages {
   width: 100%;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   box-sizing: border-box;
   padding: 40px 20px;
 
-  background: linear-gradient(-0.15turn, #1f1f1f, #282828);
   border-radius: 20px;
 
+  background: linear-gradient(-0.15turn, #1f1f1f, #282828);
   text-align: center;
   color: white;
 }
@@ -52,6 +105,9 @@
 }
 
 .advantagesBlock {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -59,13 +115,7 @@
 
 .advantagesBlock span {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
   flex: 1;
   padding: 0 20px;
-}
-
-.contentBlock {
-  display: flex;
-  box-sizing: border-box;
-  padding: 100px 0 20px 0;
 }

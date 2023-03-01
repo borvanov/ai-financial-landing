@@ -1,5 +1,5 @@
 :root {
-  --max-width: 1100px;
+  --max-width: 1940px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
@@ -10,9 +10,9 @@
   --background-start-rgb: 218, 221, 216;
   --background-end-rgb: 255, 255, 255;
 
-  --primary-color: #b7ce63;
+  --primary-color: #43b692;
 
-  --secondary-color: #8fb339;
+  --secondary-color: #099773;
 
   --third-color: #4b5842;
 }
@@ -43,9 +43,9 @@ body {
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--background-start-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-end-rgb));
 }
 
 a {
@@ -65,17 +65,25 @@ button {
     var(--secondary-color)
   ); */
   background-color: #e6eec7;
-  transition: 0.2s;
+  /* transition: 0.2s; */
+  font-size: 14px;
 }
 
 button:hover {
-  /* background-color: var(--primary-color); */
-  transform: scale(0.98);
+  background-color: var(--primary-color);
 }
 
 button.primary {
-  background: linear-gradient(0.15turn, #099773, #43b692);
+  background: linear-gradient(
+    0.15turn,
+    var(--secondary-color),
+    var(--primary-color)
+  );
   color: white;
+}
+
+button.primary:hover {
+  background: var(--secondary-color);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,58 @@
+.container {
+  background: linear-gradient(-0.15turn, #1f1f1f, #282828);
+
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+
+.contentContainer {
+  display: flex;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.container h1,
+.container p {
+  color: white;
+}
+
+.description {
+  max-width: 500px;
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.mainInfo {
+  flex: 1;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.column ul li {
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.column h3 {
+  margin-bottom: 24px;
+}

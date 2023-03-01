@@ -27,4 +27,5 @@
 
 .menu li:hover {
   color: var(--secondary-color);
+  text-decoration: underline;
 }
