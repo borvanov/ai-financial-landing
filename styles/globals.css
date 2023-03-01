@@ -4,7 +4,8 @@
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-  --font-primary: Poppins sans-serif;
+  --font-primary: "Poppins" sans-serif;
+  --font-secondary: "Climate Crisis", cursive;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 218, 221, 216;
@@ -53,6 +54,12 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
 button {
   padding: 10px 20px;
   border: 1px dashed var(--secondary-color);
@@ -94,4 +101,6 @@ button.primary:hover {
 
 .content {
   max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
 }

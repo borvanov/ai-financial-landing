@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  gap: 100px;
+  padding: 100px 0;
+}
+
+.subheader {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.container h2 {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.part {
+  flex: 1;
+}
+
+.productDescription {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.features {
+  margin-top: 100px;
+  display: grid;
+  gap: 40px 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.featureContainer {
+  padding-bottom: 20px;
+}
+
+.featureContainer h3 {
+  margin-bottom: 20px;
+}
+
+.imageWrapper {
+  margin-top: 80px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.image {
+  border-radius: 20px;
+  object-fit: cover;
+}

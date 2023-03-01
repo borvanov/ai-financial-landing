@@ -12,6 +12,8 @@ export const Footer: React.FC = () => (
           Global LLM is used to categorize all the records and provide the best
           statistics based on it.
         </p>
+
+        <p className={styles.description}>© AI Financial, 2023</p>
       </div>
 
       <div className={styles.columns}>
