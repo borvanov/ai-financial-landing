@@ -1,5 +1,5 @@
 .container {
-  background: linear-gradient(0.15turn, #0f2225, #282828);
+  background: linear-gradient(0.15turn, var(--third-color), var(--fourth-color));
 
   box-sizing: border-box;
   padding: 40px 20px;

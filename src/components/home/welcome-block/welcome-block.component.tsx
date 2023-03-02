@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { faComments, faMicrophone } from "@fortawesome/free-solid-svg-icons";
+import { faComments, faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./welcome-block.module.css";
 
@@ -14,11 +14,11 @@ export const WelcomeBlock: React.FC = () => (
         <br />
         <span>
           from
-          <FontAwesomeIcon className={styles.headerIcon} icon={faMicrophone} />
+          <FontAwesomeIcon className={styles.headerIcon} icon={faVolumeHigh} />
           and
           <FontAwesomeIcon className={styles.headerIcon} icon={faComments} />
         </span>
-        to organized structure.
+        to an organized structure.
       </h1>
 
       <div className={styles.descriptionContent}>

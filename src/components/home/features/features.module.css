@@ -1,19 +1,5 @@
 .container {
-  display: flex;
-  gap: 100px;
   padding: 100px 0;
-}
-
-.subheader {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.container h2 {
-  font-weight: 900;
-  font-size: 60px;
-  line-height: 70px;
 }
 
 .part {

@@ -1,4 +1,4 @@
-.advantages {
+.container {
   width: 100%;
 
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
   border-radius: 20px;
 
-  background: linear-gradient(0.15turn, #0f2225, #282828);
+  background: linear-gradient(0.15turn, var(--third-color), var(--fourth-color));
   text-align: center;
   color: white;
 }
@@ -20,7 +20,7 @@
   opacity: 0.8;
 }
 
-.advantages h2 span {
+.container h2 span {
   color: var(--primary-color);
   font-weight: 700;
 }

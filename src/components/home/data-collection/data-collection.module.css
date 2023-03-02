@@ -1,0 +1,43 @@
+.container {
+  padding: 40px 0 100px 0;
+  justify-content: center;
+}
+
+.dataImage {
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.part {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentContainer {
+  align-items: flex-start;
+}
+
+.contentContainer h2 {
+  text-align: left;
+  margin: 0;
+}
+
+.dataList {
+  list-style: none;
+  display: grid;
+  gap: 40px 20px;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.dataList li h3 {
+  margin-bottom: 20px;
+}
+
+.dataList li h3 span {
+  color: var(--primary-color);
+}

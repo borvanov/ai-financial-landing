@@ -3,10 +3,10 @@ import React from "react";
 import styles from "./features.module.css";
 
 export const Features: React.FC = () => (
-  <section className={`${styles.container} content`}>
+  <section className={`${styles.container} content columns`}>
     <div className={styles.part}>
-      <span className={styles.subheader}>Features & resources</span>
-      <h2>
+      <span className="block-subheader">Features & resources</span>
+      <h2 className="block-header">
         Smart
         <br />
         AI-based

@@ -1,7 +1,7 @@
 .header {
   line-height: 80px;
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .header span {
@@ -13,11 +13,12 @@
   font-size: 16px;
   max-height: 90px;
   margin: 0 20px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .header b {
   font-size: 80px;
+  font-weight: 900;
 }
 
 .welcomeBlock {

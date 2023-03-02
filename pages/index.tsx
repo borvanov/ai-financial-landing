@@ -7,6 +7,9 @@ import { Footer } from "@/src/shared/components/footer/footer.component";
 import { Advantages } from "@/src/components/home/advantages/advantages.component";
 import { Features } from "@/src/components/home/features/features.component";
 import { WelcomeBlock } from "@/src/components/home/welcome-block/welcome-block.component";
+import { DataCollection } from "@/src/components/home/data-collection/data-collection.component";
+import { CallToAction } from "@/src/components/home/call-to-action/call-to-action.component";
+import { Templates } from "@/src/components/home/templates/templates.component";
 
 export default function Home() {
   return (
@@ -22,9 +25,14 @@ export default function Home() {
       </Head>
       <Header />
       <main className={styles.container}>
-        <WelcomeBlock />
-        <Advantages />
-        <Features />
+        <div className={styles.blockSpacesWrapper}>
+          <WelcomeBlock />
+          <Advantages />
+          <Features />
+          <DataCollection />
+          <Templates />
+          <CallToAction />
+        </div>
       </main>
 
       <Footer />

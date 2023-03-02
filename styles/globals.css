@@ -11,11 +11,10 @@
   --background-start-rgb: 218, 221, 216;
   --background-end-rgb: 255, 255, 255;
 
-  --primary-color: #43b692;
-
-  --secondary-color: #099773;
-
-  --third-color: #4b5842;
+  --primary-color: #da4453;
+  --secondary-color: #89216b;
+  --third-color: #24091c;
+  --fourth-color: #282828;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,7 +70,7 @@ button {
     var(--primary-color),
     var(--secondary-color)
   ); */
-  background-color: #e6eec7;
+  background-color: var(--secondary-color);
   /* transition: 0.2s; */
   font-size: 14px;
 }
@@ -103,4 +102,21 @@ button.primary:hover {
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
+}
+
+.content.columns {
+  display: flex;
+  gap: 100px;
+}
+
+h2.block-header {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+span.block-subheader {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
 }

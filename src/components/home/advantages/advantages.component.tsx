@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./advantages.module.css";
 
 export const Advantages: React.FC = () => (
-  <section className={styles.advantages}>
+  <section className={styles.container}>
     <h2>
       5 simple reasons to start tracking your expenses
       <br />

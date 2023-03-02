@@ -13,6 +13,17 @@
   right: 0;
 
   background-color: white;
+
+  z-index: 999;
+}
+
+.container h1 {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.container h1:hover {
+  color: var(--primary-color);
 }
 
 .menu {
