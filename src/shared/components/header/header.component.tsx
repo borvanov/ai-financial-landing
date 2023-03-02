@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./header.module.css";
 
 export const Header: React.FC = () => (
@@ -5,11 +6,23 @@ export const Header: React.FC = () => (
     <h1>AI Financial.</h1>
 
     <menu className={styles.menu}>
-      <li>Home</li>
-      <li>Why us</li>
-      <li>Features</li>
-      <li>Blog</li>
-      <li>Support</li>
+      <li>
+        <Link href="/">Home</Link>
+      </li>
+      <li>
+        <Link href="/">Why us</Link>
+      </li>
+      <li>
+        <Link href="/">Features</Link>
+      </li>
+      <li>
+        <Link target="_blank" href="https://t.me/borvanov">
+          Blog
+        </Link>
+      </li>
+      <li>
+        <Link href="/">Support</Link>
+      </li>
     </menu>
 
     <button className="primary">Join our waiting list</button>

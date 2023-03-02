@@ -119,4 +119,5 @@ span.block-subheader {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 18px;
+  opacity: 0.6;
 }

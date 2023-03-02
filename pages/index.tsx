@@ -10,6 +10,7 @@ import { WelcomeBlock } from "@/src/components/home/welcome-block/welcome-block.
 import { DataCollection } from "@/src/components/home/data-collection/data-collection.component";
 import { CallToAction } from "@/src/components/home/call-to-action/call-to-action.component";
 import { Templates } from "@/src/components/home/templates/templates.component";
+import { ProjectRoadMap } from "@/src/components/home/project-road-map/project-road-map.component";
 
 export default function Home() {
   return (
@@ -31,6 +32,11 @@ export default function Home() {
           <Features />
           <DataCollection />
           <Templates />
+          <ProjectRoadMap />
+        </div>
+        <div
+          className={`${styles.fadeBackground} ${styles.blockSpacesWrapper}`}
+        >
           <CallToAction />
         </div>
       </main>
