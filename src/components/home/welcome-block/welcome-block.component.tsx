@@ -30,7 +30,7 @@ export const WelcomeBlock: React.FC = () => (
           will keep all your spends organized.
         </p>
 
-        <button className="primary">Try online right now</button>
+        <button className="primary">Join our waiting list</button>
       </div>
     </div>
 

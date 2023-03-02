@@ -3,7 +3,9 @@ import styles from "./header.module.css";
 
 export const Header: React.FC = () => (
   <header className={styles.container}>
-    <h1>AI Financial.</h1>
+    <h1>
+      <Link href="/">AI Financial.</Link>
+    </h1>
 
     <menu className={styles.menu}>
       <li>

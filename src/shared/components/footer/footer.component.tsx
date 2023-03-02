@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./footer.module.css";
 
 export const Footer: React.FC = () => (
@@ -31,9 +32,17 @@ export const Footer: React.FC = () => (
           <h3>Help Center</h3>
 
           <ul>
-            <li>FAQ</li>
-            <li>Terms of use</li>
-            <li>Blog</li>
+            <li>
+              <Link href="/faq">FAQ</Link>
+            </li>
+            <li>
+              <Link href="/terms">Terms of use</Link>
+            </li>
+            <li>
+              <Link target="_blank" href="https://t.me/borvanov">
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
 
