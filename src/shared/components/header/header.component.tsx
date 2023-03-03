@@ -27,6 +27,8 @@ export const Header: React.FC = () => (
       </li>
     </menu>
 
-    <button className="primary">Join our waiting list</button>
+    <Link href="/subscribe" className="button primary">
+      Join our waiting list
+    </Link>
   </header>
 );

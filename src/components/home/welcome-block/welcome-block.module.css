@@ -1,19 +1,19 @@
 .header {
   line-height: 80px;
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .header span {
   display: flex;
   align-items: center;
+  color: var(--primary-color);
 }
 
 .headerIcon {
   font-size: 16px;
-  max-height: 90px;
+  max-height: 60px;
   margin: 0 20px;
-  color: var(--primary-color);
 }
 
 .header b {

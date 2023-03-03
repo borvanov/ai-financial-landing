@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import { faComments, faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
+import { faComments, faMicrophone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./welcome-block.module.css";
+import Link from "next/link";
 
 export const WelcomeBlock: React.FC = () => (
   <section className={`${styles.welcomeBlock} content`}>
@@ -14,7 +15,7 @@ export const WelcomeBlock: React.FC = () => (
         <br />
         <span>
           from
-          <FontAwesomeIcon className={styles.headerIcon} icon={faVolumeHigh} />
+          <FontAwesomeIcon className={styles.headerIcon} icon={faMicrophone} />
           and
           <FontAwesomeIcon className={styles.headerIcon} icon={faComments} />
         </span>
@@ -30,7 +31,9 @@ export const WelcomeBlock: React.FC = () => (
           will keep all your spends organized.
         </p>
 
-        <button className="primary">Join our waiting list</button>
+        <Link href="/subscribe" className="button primary">
+          Join our waiting list
+        </Link>
       </div>
     </div>
 

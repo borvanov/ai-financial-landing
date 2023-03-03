@@ -2,9 +2,17 @@ import React from "react";
 import styles from "./project-road-map.module.css";
 
 const ROADMAP_POINTS = [
-  { date: "April 2023", description: "MVP - beta release" },
-  { date: "May 2023", description: "MVP - beta release" },
-  { date: "June 2023", description: "MVP - beta release" },
+  {
+    date: "April 2023",
+    description:
+      "MVP - beta release. Basic features such as LLM integration and voice transcription.",
+  },
+  {
+    date: "May 2023",
+    description:
+      "V1 release. SMS integration and Statistics screen implementation.",
+  },
+  { date: "June 2023", description: "V1 bugfix. V1.5 release." },
 ];
 
 export const ProjectRoadMap: React.FC = () => (

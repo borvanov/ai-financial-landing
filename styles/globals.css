@@ -11,9 +11,9 @@
   --background-start-rgb: 218, 221, 216;
   --background-end-rgb: 255, 255, 255;
 
-  --primary-color: #da4453;
-  --secondary-color: #89216b;
-  --third-color: #24091c;
+  --primary-color: #06beb6;
+  --secondary-color: #48b1bf;
+  --third-color: #002725;
   --fourth-color: #282828;
 }
 
@@ -59,6 +59,7 @@ h2 {
   margin-bottom: 40px;
 }
 
+.button,
 button {
   padding: 10px 20px;
   border: 1px dashed var(--secondary-color);
@@ -75,10 +76,12 @@ button {
   font-size: 14px;
 }
 
+.button:hover,
 button:hover {
   background-color: var(--primary-color);
 }
 
+.button.primary,
 button.primary {
   background: linear-gradient(
     0.15turn,
@@ -88,6 +91,7 @@ button.primary {
   color: white;
 }
 
+.button.primary:hover,
 button.primary:hover {
   background: var(--secondary-color);
 }

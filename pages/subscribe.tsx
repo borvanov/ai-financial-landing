@@ -5,7 +5,7 @@ import styles from "@/styles/faq.module.css";
 import { Header } from "@/src/shared/components/header/header.component";
 import { Footer } from "@/src/shared/components/footer/footer.component";
 
-export default function Home() {
+export default function Subscribe() {
   return (
     <>
       <Head>

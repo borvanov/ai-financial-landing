@@ -40,4 +40,5 @@
 
 .dataList li h3 span {
   color: var(--primary-color);
+  font-size: 30px;
 }
