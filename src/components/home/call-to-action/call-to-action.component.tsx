@@ -5,7 +5,7 @@ import styles from "./call-to-action.module.css";
 export const CallToAction: React.FC = () => (
   <section className={`${styles.container} content`}>
     <div className={`${styles.block} ${styles.contentContainer}`}>
-      <h2>
+      <h2 className="block-header">
         Take your
         <br />
         financial situation
