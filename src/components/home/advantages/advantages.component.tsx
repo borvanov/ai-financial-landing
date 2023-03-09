@@ -6,7 +6,7 @@ export const Advantages: React.FC = () => (
     <h2>
       5 simple reasons to start tracking your expenses
       <br />
-      with <span>AI Financial</span>
+      using the AI power
     </h2>
 
     <div className={styles.dividerLine} />

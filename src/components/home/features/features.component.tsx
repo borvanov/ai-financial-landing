@@ -19,7 +19,7 @@ export const Features: React.FC = () => (
       <div className={styles.imageWrapper}>
         <Image
           className={styles.image}
-          src="/assets/images/screen-3.jpg"
+          src="/assets/images/screen-3.png"
           alt="Image"
           fill
         />

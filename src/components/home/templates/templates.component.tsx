@@ -1,11 +1,18 @@
-// import Image from "next/image";
+import Image from "next/image";
 import React from "react";
 import styles from "./templates.module.css";
 
 export const Templates: React.FC = () => (
   <section className={styles.container}>
     <div className="content columns">
-      <div className={`${styles.block} ${styles.images}`}></div>
+      <div className={`${styles.block} ${styles.images}`}>
+        <Image
+          className={styles.image}
+          fill
+          alt="Templates image"
+          src="/assets/images/screen-6.png"
+        />
+      </div>
       <div className={styles.block}>
         <span className="block-subheader">TEMPLATES & SUPPORT</span>
         <h2 className="block-header">
