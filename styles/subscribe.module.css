@@ -20,7 +20,8 @@
 
 .imageContainer {
   position: relative;
-  min-height: 400px;
+  min-height: 600px;
+  flex: 1.5;
 }
 
 .image {
