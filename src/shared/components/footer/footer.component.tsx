@@ -22,9 +22,9 @@ export const Footer: React.FC = () => (
           <h3>Project</h3>
 
           <ul>
-            <li>Features</li>
-            <li>Our goal</li>
-            <li>Waiting list</li>
+            <li>
+              <Link href="/subscribe">Waiting list</Link>
+            </li>
           </ul>
         </div>
 
@@ -50,9 +50,12 @@ export const Footer: React.FC = () => (
           <h3>Support</h3>
 
           <ul>
-            <li>Telegram</li>
+            <li>
+              <Link target="_blank" href="https://t.me/brwnGOD">
+                Blog
+              </Link>
+            </li>
             <li>E-mail</li>
-            <li>Instagram</li>
           </ul>
         </div>
       </div>

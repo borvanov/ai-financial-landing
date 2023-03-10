@@ -1,0 +1,37 @@
+.container {
+  padding: 200px 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  gap: 40px;
+}
+
+.subheader {
+  font-size: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px 0 60px 0;
+  font-weight: 600;
+}
+
+.part {
+  flex: 1;
+}
+
+.imageContainer {
+  position: relative;
+  min-height: 400px;
+}
+
+.image {
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 100px;
+
+    padding: 100px 20px;
+  }
+}

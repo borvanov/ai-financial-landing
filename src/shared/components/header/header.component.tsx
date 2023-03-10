@@ -10,10 +10,7 @@ const MenuItems: React.FC = () => (
       <Link href="/">Home</Link>
     </li>
     <li>
-      <Link href="/">Why us</Link>
-    </li>
-    <li>
-      <Link href="/">Features</Link>
+      <Link href="/faq">FAQ</Link>
     </li>
     <li>
       <Link target="_blank" href="https://t.me/borvanov">
@@ -21,7 +18,7 @@ const MenuItems: React.FC = () => (
       </Link>
     </li>
     <li>
-      <Link href="/">Support</Link>
+      <Link href="/support">Support</Link>
     </li>
   </>
 );

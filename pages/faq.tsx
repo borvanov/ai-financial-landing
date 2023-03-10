@@ -18,8 +18,9 @@ export default function FAQ() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className={styles.container}></main>
-
+      <main className={styles.container}>
+        
+      </main>
       <Footer />
     </>
   );
