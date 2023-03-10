@@ -3,6 +3,12 @@
   justify-content: center;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
 .dataImage {
   object-fit: contain;
   margin: 0 auto;

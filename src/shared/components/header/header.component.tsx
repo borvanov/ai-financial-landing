@@ -1,5 +1,67 @@
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { useState } from "react";
 import styles from "./header.module.css";
+
+const MenuItems: React.FC = () => (
+  <>
+    <li>
+      <Link href="/">Home</Link>
+    </li>
+    <li>
+      <Link href="/">Why us</Link>
+    </li>
+    <li>
+      <Link href="/">Features</Link>
+    </li>
+    <li>
+      <Link target="_blank" href="https://t.me/borvanov">
+        Blog
+      </Link>
+    </li>
+    <li>
+      <Link href="/">Support</Link>
+    </li>
+  </>
+);
+
+const Menu: React.FC = () => (
+  <menu className={styles.menu}>
+    <MenuItems />
+  </menu>
+);
+
+const MobileMenu: React.FC = () => {
+  const [opened, setOpened] = useState(false);
+
+  const toggleOpened = () => {
+    setOpened((value) => !value);
+  };
+
+  return (
+    <div className={styles.mobileMenuContainer}>
+      {opened ? (
+        <>
+          <menu className={styles.mobileMenu}>
+            <MenuItems />
+          </menu>
+          <FontAwesomeIcon
+            icon={faClose}
+            className={styles.closeMenuIcon}
+            onClick={toggleOpened}
+          />
+        </>
+      ) : (
+        <FontAwesomeIcon
+          icon={faBars}
+          className={styles.openMenuIcon}
+          onClick={toggleOpened}
+        />
+      )}
+    </div>
+  );
+};
 
 export const Header: React.FC = () => (
   <header className={styles.container}>
@@ -7,27 +69,10 @@ export const Header: React.FC = () => (
       <Link href="/">AI Financial.</Link>
     </h1>
 
-    <menu className={styles.menu}>
-      <li>
-        <Link href="/">Home</Link>
-      </li>
-      <li>
-        <Link href="/">Why us</Link>
-      </li>
-      <li>
-        <Link href="/">Features</Link>
-      </li>
-      <li>
-        <Link target="_blank" href="https://t.me/borvanov">
-          Blog
-        </Link>
-      </li>
-      <li>
-        <Link href="/">Support</Link>
-      </li>
-    </menu>
+    <Menu />
+    <MobileMenu />
 
-    <Link href="/subscribe" className="button primary">
+    <Link href="/subscribe" className={`${styles.subscribe} button primary`}>
       Join our waiting list
     </Link>
   </header>

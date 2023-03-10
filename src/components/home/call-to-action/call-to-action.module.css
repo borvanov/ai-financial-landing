@@ -3,6 +3,12 @@
   display: flex;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
 .contentContainer {
   padding: 80px 0;
 }

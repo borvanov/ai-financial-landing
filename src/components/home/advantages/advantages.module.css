@@ -6,7 +6,11 @@
 
   border-radius: 20px;
 
-  background: linear-gradient(0.15turn, var(--third-color), var(--fourth-color));
+  background: linear-gradient(
+    0.15turn,
+    var(--third-color),
+    var(--fourth-color)
+  );
   text-align: center;
   color: white;
 }
@@ -31,6 +35,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+@media (max-width: 1380px) and (min-width: 480px) {
+  .advantagesBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 742px) {
+  .advantagesBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .advantagesBlock span {

@@ -10,15 +10,26 @@
   color: var(--primary-color);
 }
 
+.header b {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+@media (max-width: 640px) {
+  .header {
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .header b {
+    font-size: 36px;
+  }
+}
+
 .headerIcon {
   font-size: 16px;
   max-height: 60px;
   margin: 0 20px;
-}
-
-.header b {
-  font-size: 80px;
-  font-weight: 900;
 }
 
 .welcomeBlock {
@@ -27,7 +38,20 @@
   padding-top: 100px;
   margin: 0 auto;
   display: flex;
+  gap: 80px;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media (max-width: 1670px) {
+  .welcomeBlock {
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  .image {
+    max-width: 762px;
+  }
 }
 
 .description {
@@ -53,11 +77,29 @@
 .imagesPreviewContent {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.imagesOverlay {
-  height: 100%;
-  overflow: hidden;
+.imageContainer {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 40px;
+}
+
+.image {
+  /* max-width: 80%; */
+  object-fit: cover;
+  object-position: top center;
+}
+
+@media (max-width: 590px) {
+  .image {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .imageContainer {
+    margin: 0 20px;
+  }
 }

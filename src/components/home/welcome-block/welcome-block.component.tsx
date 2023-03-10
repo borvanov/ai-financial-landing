@@ -38,25 +38,12 @@ export const WelcomeBlock: React.FC = () => (
     </div>
 
     <div className={styles.imagesPreviewContent}>
-      <div className={styles.imagesOverlay}>
+      <div className={styles.imageContainer}>
         <Image
           src="/assets/images/screen-1.png"
           alt="Main screen"
-          style={{
-            objectFit: "contain",
-          }}
-          width={400}
-          height={940}
-        />
-        <Image
-          src="/assets/images/screen-2.png"
-          alt="Main screen"
-          style={{
-            objectFit: "contain",
-            marginBottom: 200,
-          }}
-          width={400}
-          height={940}
+          className={styles.image}
+          fill
         />
       </div>
     </div>
