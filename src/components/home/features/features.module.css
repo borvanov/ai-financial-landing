@@ -24,6 +24,12 @@
   grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 600px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
 .featureContainer {
   padding-bottom: 20px;
 }

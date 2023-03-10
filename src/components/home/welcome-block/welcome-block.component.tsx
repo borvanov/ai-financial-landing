@@ -40,7 +40,7 @@ export const WelcomeBlock: React.FC = () => (
     <div className={styles.imagesPreviewContent}>
       <div className={styles.imageContainer}>
         <Image
-          src="/assets/images/screen-1.png"
+          src="/assets/images/screen-2.png"
           alt="Main screen"
           className={styles.image}
           fill

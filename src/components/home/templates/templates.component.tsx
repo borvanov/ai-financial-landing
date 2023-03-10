@@ -4,7 +4,7 @@ import styles from "./templates.module.css";
 
 export const Templates: React.FC = () => (
   <section className={styles.container}>
-    <div className="content columns">
+    <div className={`${styles.contentContainer} content columns`}>
       <div className={`${styles.block} ${styles.images}`}>
         <Image
           className={styles.image}

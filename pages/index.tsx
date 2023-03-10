@@ -28,10 +28,22 @@ export default function Home() {
       <main className={styles.container}>
         <div className={styles.blockSpacesWrapper}>
           <WelcomeBlock />
+        </div>
+        <div
+          className={`${styles.blockSpacesWrapper} ${styles.coloredBlockWrapper} `}
+        >
           <Advantages />
+        </div>
+        <div className={styles.blockSpacesWrapper}>
           <Features />
           <DataCollection />
+        </div>
+        <div
+          className={`${styles.blockSpacesWrapper} ${styles.coloredBlockWrapper} `}
+        >
           <Templates />
+        </div>
+        <div className={styles.blockSpacesWrapper}>
           <ProjectRoadMap />
         </div>
         <div

@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 1024px) {
-  .container.content {
+  .contentContainer {
     flex-direction: column;
   }
 }
@@ -50,6 +50,7 @@
 
 .images {
   position: relative;
+  min-height: 400px;
 }
 
 .image {

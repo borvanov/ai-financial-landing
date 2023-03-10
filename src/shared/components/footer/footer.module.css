@@ -63,3 +63,18 @@
   margin-bottom: 20px;
   font-weight: 300;
 }
+
+@media (max-width: 1024px) {
+  .contentContainer {
+    flex-direction: column;
+
+    gap: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .columns {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

@@ -54,13 +54,12 @@ export const DataCollection: React.FC = () => (
         ))}
       </ul>
     </div>
-    <div className={styles.part}>
+    <div className={`${styles.part} ${styles.imageContainer}`}>
       <Image
         className={styles.dataImage}
         src="/assets/images/screen-4.png"
         alt="Screen mock"
-        width={400}
-        height={800}
+        fill
       />
     </div>
   </section>

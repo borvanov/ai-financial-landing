@@ -125,3 +125,11 @@ span.block-subheader {
   font-size: 18px;
   opacity: 0.6;
 }
+
+@media (max-width: 480px) {
+  h2.block-header {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
