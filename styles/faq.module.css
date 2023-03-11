@@ -1,13 +1,44 @@
 .container {
-  padding-top: 80px;
-  box-sizing: border-box;
+  padding: 200px 0;
+  /* box-sizing: border-box; */
 }
 
-.blockSpacesWrapper {
-  box-sizing: border-box;
-  padding: 0 20px;
+.description {
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 800px;
 }
 
-.fadeBackground {
-  background-color: rgba(0, 0, 0, 0.08);
+.questionsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.questionContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.questionContainer:hover {
+  color: var(--primary-color);
+}
+
+.questionText {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.plusIcon {
+  width: 24px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
